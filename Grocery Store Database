@@ -1,0 +1,19 @@
+CREATE TABLE what_we_sell (id integer primary key, name text, price integer, aisle integer, category text); 
+
+INSERT into what_we_sell VALUES (1, "bananas", .99, 4, "fruit");
+INSERT into what_we_sell VALUES (2, "tortillas", 2.99, 6, "breads");
+INSERT into what_we_sell VALUES (3, "hot dog buns", 3.99, 6, "breads");
+INSERT into what_we_sell VALUES (4, "ice cream", 4.99, 12, "frozen");
+INSERT into what_we_sell VALUES (5, "dimsum", 8.99, 13, "frozen");
+INSERT into what_we_sell VALUES (6, "dog bones", 5.99, 10, "ambient");
+INSERT into what_we_sell VALUES (7, "milk", 3.49, 11, "cooler");
+INSERT into what_we_sell VALUES (8, "steak", 12.99, 10, "meats");
+INSERT into what_we_sell VALUES (9, "chicken breast", 9.99, 10, "meats");
+INSERT into what_we_sell VALUES (10, "oatmeal", 6.50, 5, "ambient");
+INSERT into what_we_sell VALUES (11, "yogurt", 1.99, 11, "cooler");
+INSERT into what_we_sell VALUES (12, "cereal", 4.99, 5, "ambient");
+INSERT into what_we_sell VALUES (13, "apples", 1.50, 4, "fruits");
+INSERT into what_we_sell VALUES (14, "canned green beans", 1.50, 2, "canned food");
+INSERT into what_we_sell VALUES (15, "ketchup", 2.39, 2, "condiments");
+
+SELECT name, price, aisle from what_we_sell order by aisle 
